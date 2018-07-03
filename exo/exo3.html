@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        /*
+            var cpt = 1;
+            document.write("<table>");
+            for (i = 0; i < 3; i++) {
+                document.write("<tr>");
+                for (j = 0; j < 4; j++) {
+                    document.write("<td>");
+                    document.write(cpt);
+                    document.write("<td>");
+                    cpt++;
+                }
+                document.write("<tr>");
+            }
+            document.write("</table>");
+    */
+        document.write("<table>");
+        for (i = 1; i < 13; i++) {
+            if (i % 4 == 1)
+                document.write("<tr>");
+
+            document.write("<td>");
+            document.write(i);
+            document.write("<td>");
+
+            if (i % 4 == 4)
+                document.write("<tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+
+</html>
