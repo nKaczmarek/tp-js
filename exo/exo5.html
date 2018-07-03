@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var notes = [15,12,18,14,16,16,19,13,11,10,16,15];
+
+        function moyenne(){
+            var somme = 0;
+            for(i=0; i<notes.length; i++){
+                somme = somme + notes[i];
+            }
+            return (somme/notes.length).toFixed(2);
+        }
+
+        alert(moyenne());
+    </script>
+</body>
+</html>
